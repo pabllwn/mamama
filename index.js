@@ -11,19 +11,19 @@ client.on("ready", () => {
 
 client.on("messageCreate", message => {
     // تحقق من معرفات القنوات الصحيحة
-    const channel = client.channels.cache.get('1123064802361753632'); // قناة ROB
-    const channel1 = client.channels.cache.get('1123064802361753632'); // قناة FIN TATl3b
-    const rob = client.channels.cache.get('1123064802361753632'); // قناة CHAT FIN trobi
+    const channel = client.channels.cache.get('1214053233094295582'); // قناة ROB
+    const channel1 = client.channels.cache.get('1214053233094295582'); // قناة FIN TATl3b
+    const rob = client.channels.cache.get('1214053229822738492'); // قناة CHAT FIN trobi
 
     if (flag) return;
 
     // تحقق من الرسالة والمستخدم المحدد
     if (message.content.toLowerCase().replace(/\s+/g, '').startsWith('!withall') &&
-        (message.author.id === "826571466815569970")) {
+        (message.author.id === "833869005500448808) {
         flag = true;
 
         // إرسال الأوامر بشكل متتالي مع التأكد من التنفيذ الصحيح
-        channel.send('!rob 1076271692424433774').then(() => console.log('Sent !rob command'));
+        channel.send('!rob 833869005500448808').then(() => console.log('Sent !rob command'));
         setTimeout(() => {
             channel1.send('!bal').then(() => console.log('Sent !bal command'));
         }, 4000);
