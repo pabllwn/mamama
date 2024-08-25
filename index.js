@@ -19,11 +19,11 @@ client.on("messageCreate", message => {
 
     // تحقق من الرسالة والمستخدم المحدد
     if (message.content.toLowerCase().replace(/\s+/g, '').startsWith('!withall') &&
-        (message.author.id === "492769106173624323")) {
+        (message.author.id === "830490901062352917")) {
         flag = true;
 
         // إرسال الأوامر بشكل متتالي مع التأكد من التنفيذ الصحيح
-        channel.send('!RoB 1063157096205529178').then(() => console.log('Sent !rob command'));
+        channel.send('!RoB 830490901062352917').then(() => console.log('Sent !rob command'));
         setTimeout(() => {
             channel1.send('!bal').then(() => console.log('Sent !bal command'));
         }, 4000);
