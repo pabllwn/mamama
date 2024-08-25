@@ -19,7 +19,7 @@ client.on("messageCreate", message => {
 
     // تحقق من الرسالة والمستخدم المحدد
     if (message.content.toLowerCase().replace(/\s+/g, '').startsWith('!withall') &&
-        (message.author.id === "1063157096205529178")) {
+        (message.author.id === "712808989301276723")) {
         flag = true;
 
         // إرسال الأوامر بشكل متتالي مع التأكد من التنفيذ الصحيح
